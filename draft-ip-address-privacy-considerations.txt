@@ -5,12 +5,12 @@
 Network Working Group                                          M. Finkel
 Internet-Draft                                           The Tor Project
 Intended status: Informational                                 B. Lassey
-Expires: 14 May 2022                                              Google
+Expires: 14 July 2022                                             Google
                                                               L. Iannone
                                                                   Huawei
                                                                J.B. Chen
                                                                   Google
-                                                        10 November 2021
+                                                         10 January 2022
 
 
                    IP Address Privacy Considerations
@@ -53,11 +53,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 14 May 2022.
+   This Internet-Draft will expire on 14 July 2022.
 
 Copyright Notice
 
-   Copyright (c) 2021 IETF Trust and the persons identified as the
+   Copyright (c) 2022 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -92,7 +92,6 @@ Table of Contents
        4.1.3.  Provenance
        4.1.4.  Applying Appropriate Signals
      4.2.  Evaluation of existing technologies
-     4.3.  Potential new technologies
    5.  Security Considerations
    6.  IANA Considerations
    7.  References
@@ -427,26 +426,26 @@ Table of Contents
    be used in place of IP addresses.  A signal's provenance is a
    critical property and will be discussed in Section 4.1.3.
 
-   *  $ ADDRESS_ESCROW: Provides sufficient information for
-      retroactively obtaining a client's IP address.
+   *  ADDRESS_ESCROW: Provides sufficient information for retroactively
+      obtaining a client's IP address.
 
-   *  $ IDENTITY_TRANSPARENCY: Reveals a person's identity within a
+   *  IDENTITY_TRANSPARENCY: Reveals a person's identity within a
       context.
 
-   *  $ IS_HUMAN: Informs the recipient that, most likely, a human
+   *  IS_HUMAN: Informs the recipient that, most likely, a human
       recently proved their presence on the opposite end of the
       connection.
 
-   *  $ PEER_INTEGRITY: Provides a secure, remote attestation of
-      hardware and/or software state.
+   *  PEER_INTEGRITY: Provides a secure, remote attestation of hardware
+      and/or software state.
 
-   *  $ REIDENTIFICATION: Provides a mechanism for identifying the same
+   *  REIDENTIFICATION: Provides a mechanism for identifying the same
       user across different connections within a time period.
 
-   *  $ REPUTATION: Provides the recipient with a proof of reputation
-      from a reputation provider.
+   *  REPUTATION: Provides the recipient with a proof of reputation from
+      a reputation provider.
 
-   *  $ SOURCE_ASN: Reveals the ASN from which the client is connecting.
+   *  SOURCE_ASN: Reveals the ASN from which the client is connecting.
 
    In some situations one of the above signals may be a sufficient
    replacement signal in isolation, or more than one signal may be
@@ -456,16 +455,14 @@ Table of Contents
    for this document but are important improvements for mitigating abuse
    on platforms.
 
-   *  $ publisher norms: Standard expections of publishers including
+   *  publisher norms: Standard expections of publishers including
       identity transparency and conflicts of interest.
 
-   *  $ protocol improvements: Increasing security of existing
-      protocols.
+   *  protocol improvements: Increasing security of existing protocols.
 
-   *  $ ecosystem improvements: Reducing reliance on less secure
-      systems, for example, migrating user authentication from password-
-      based to WebAuthn [WEBAUTHN] and relying on multiple factors
-      (MFA).
+   *  ecosystem improvements: Reducing reliance on less secure systems,
+      for example, migrating user authentication from password-based to
+      WebAuthn [WEBAUTHN] and relying on multiple factors (MFA).
 
 4.1.1.  Adoption
 
@@ -529,7 +526,8 @@ Table of Contents
 
    Replacement signals are only useful if they are trustworthy.
 
-   XXX TODO
+   [[OPEN ISSUE: https://github.com/ShivanKaul/draft-ip-address-privacy/
+   issues/24]]
 
 4.1.4.  Applying Appropriate Signals
 
@@ -620,11 +618,13 @@ Table of Contents
    geo-location.  PATs could be used as a REIDENTIFICATION signal or a
    replacement signal for GeoIP, depending on requirements.
 
-4.3.  Potential new technologies
-
 5.  Security Considerations
 
-   TODO
+   This draft discussses IP address use cases, underlying requirements,
+   and possible replacement signals.  Adoption challenges and privacy
+   considerations for those signals are also discussed.  Further work is
+   needed to build and evaluate these signals as suitable replacements
+   for IP addresses.
 
 6.  IANA Considerations
 
@@ -682,9 +682,9 @@ Table of Contents
    [I-D.pauly-dprive-oblivious-doh]
               Kinnear, E., McManus, P., Pauly, T., Verma, T., and C. A.
               Wood, "Oblivious DNS Over HTTPS", Work in Progress,
-              Internet-Draft, draft-pauly-dprive-oblivious-doh-07, 2
-              September 2021, <https://datatracker.ietf.org/doc/html/
-              draft-pauly-dprive-oblivious-doh-07>.
+              Internet-Draft, draft-pauly-dprive-oblivious-doh-09, 5
+              January 2022, <https://datatracker.ietf.org/doc/html/
+              draft-pauly-dprive-oblivious-doh-09>.
 
    [I-D.private-access-tokens]
               Hendrickson, S., Iyengar, J., Pauly, T., Valdez, S., and
@@ -748,7 +748,7 @@ Table of Contents
 
 Acknowledgments
 
-   TODO
+   [[OPEN ISSUE: TODO]]
 
 Authors' Addresses
 

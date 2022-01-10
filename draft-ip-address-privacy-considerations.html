@@ -12,12 +12,12 @@
 <meta content="
        This document provides an overview of privacy considerations related to user IP addresses. It includes an analysis of some current use cases for tracking of user IP addresses, mainly in the context of anti-abuse. It discusses the privacy issues associated with such tracking and provides input on mechanisms to improve the privacy of this existing model. It then captures requirements for proposed 'replacement signals' for IP addresses from this analysis. In addition, existing and under-development techniques are evaluated for fulfilling these requirements. 
     " name="description">
-<meta content="xml2rfc 3.11.1" name="generator">
+<meta content="xml2rfc 3.12.0" name="generator">
 <meta content="Internet-Draft" name="keyword">
 <meta content="draft-ip-address-privacy-considerations-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.11.1
-    Python 3.9.5
+  xml2rfc 3.12.0
+    Python 3.9.7
     appdirs 1.4.4
     ConfigArgParse 1.3
     google-i18n-address 2.5.0
@@ -25,13 +25,13 @@
     intervaltree 3.1.0
     Jinja2 2.11.3
     kitchen 1.2.6
-    lxml 4.6.3
+    lxml 4.6.5
     pycountry 20.7.3
-    pyflakes 2.3.0
+    pyflakes 2.3.1
     PyYAML 5.4.1
-    requests 2.25.1
+    requests 2.26.0
     setuptools 52.0.0
-    six 1.15.0
+    six 1.16.0
 -->
 <link href="draft-ip-address-privacy-considerations.xml" rel="alternate" type="application/rfc+xml">
 <link href="#copyright" rel="license">
@@ -635,36 +635,8 @@ hr {
 }
 
 /* index */
-.index ul {
-  margin: 0 0 0 1em;
-  padding: 0;
-  list-style: none;
-}
-.index ul ul {
-  margin: 0;
-}
-.index li {
-  margin: 0;
-  text-indent: -2em;
-  padding-left: 2em;
-  padding-bottom: 5px;
-}
-.indexIndex {
-  margin: 0.5em 0 1em;
-}
-.index a {
-  font-weight: 700;
-}
-/* make the index two-column on all but the smallest screens */
-@media (min-width: 500px) {
-  .index ul {
-    column-count: 2;
-    column-gap: 20px;
-  }
-  .index ul ul {
-    column-count: 1;
-    column-gap: 0;
-  }
+#rfc\.index\.index + ul {
+  margin-left: 0;
 }
 
 /* authors */
@@ -1043,11 +1015,11 @@ svg [stroke="fill"], svg [fill^="#fff"] {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">IP Address Privacy Considerations</td>
-<td class="right">November 2021</td>
+<td class="right">January 2022</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Finkel, et al.</td>
-<td class="center">Expires 14 May 2022</td>
+<td class="center">Expires 14 July 2022</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1060,12 +1032,12 @@ svg [stroke="fill"], svg [fill^="#fff"] {
 <dd class="internet-draft">draft-ip-address-privacy-considerations-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2021-11-10" class="published">10 November 2021</time>
+<time datetime="2022-01-10" class="published">10 January 2022</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2022-05-14">14 May 2022</time></dd>
+<dd class="expires"><time datetime="2022-07-14">14 July 2022</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1122,7 +1094,7 @@ svg [stroke="fill"], svg [fill^="#fff"] {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 14 May 2022.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 14 July 2022.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1131,7 +1103,7 @@ svg [stroke="fill"], svg [fill^="#fff"] {
 <a href="#name-copyright-notice" class="section-name selfRef">Copyright Notice</a>
         </h2>
 <p id="section-boilerplate.2-1">
-            Copyright (c) 2021 IETF Trust and the persons identified as the
+            Copyright (c) 2022 IETF Trust and the persons identified as the
             document authors. All rights reserved.<a href="#section-boilerplate.2-1" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.2-2">
             This document is subject to BCP 78 and the IETF Trust's Legal
@@ -1223,9 +1195,6 @@ svg [stroke="fill"], svg [fill^="#fff"] {
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.2">
                 <p id="section-toc.1-1.4.2.2.1"><a href="#section-4.2" class="xref">4.2</a>.  <a href="#name-evaluation-of-existing-tech" class="xref">Evaluation of existing technologies</a></p>
-</li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.3">
-                <p id="section-toc.1-1.4.2.3.1"><a href="#section-4.3" class="xref">4.3</a>.  <a href="#name-potential-new-technologies" class="xref">Potential new technologies</a></p>
 </li>
             </ul>
 </li>
@@ -1511,29 +1480,29 @@ As such, any observer along the path can pick it up and use it for various track
         </h3>
 <p id="section-4.1-1">There are 7 classes of signals identified in this document that may be used in place of IP addresses. A signal's provenance is a critical property and will be discussed in <a href="#provenance" class="xref">Section 4.1.3</a>.<a href="#section-4.1-1" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-4.1-2.1">$ ADDRESS_ESCROW: Provides sufficient information for retroactively obtaining a client's IP address.<a href="#section-4.1-2.1" class="pilcrow">¶</a>
+<li class="normal" id="section-4.1-2.1">ADDRESS_ESCROW: Provides sufficient information for retroactively obtaining a client's IP address.<a href="#section-4.1-2.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-4.1-2.2">$ IDENTITY_TRANSPARENCY: Reveals a person's identity within a context.<a href="#section-4.1-2.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-4.1-2.2">IDENTITY_TRANSPARENCY: Reveals a person's identity within a context.<a href="#section-4.1-2.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-4.1-2.3">$ IS_HUMAN: Informs the recipient that, most likely, a human recently proved their presence on the opposite end of the connection.<a href="#section-4.1-2.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-4.1-2.3">IS_HUMAN: Informs the recipient that, most likely, a human recently proved their presence on the opposite end of the connection.<a href="#section-4.1-2.3" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-4.1-2.4">$ PEER_INTEGRITY: Provides a secure, remote attestation of hardware and/or software state.<a href="#section-4.1-2.4" class="pilcrow">¶</a>
+          <li class="normal" id="section-4.1-2.4">PEER_INTEGRITY: Provides a secure, remote attestation of hardware and/or software state.<a href="#section-4.1-2.4" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-4.1-2.5">$ REIDENTIFICATION: Provides a mechanism for identifying the same user across different connections within a time period.<a href="#section-4.1-2.5" class="pilcrow">¶</a>
+          <li class="normal" id="section-4.1-2.5">REIDENTIFICATION: Provides a mechanism for identifying the same user across different connections within a time period.<a href="#section-4.1-2.5" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-4.1-2.6">$ REPUTATION: Provides the recipient with a proof of reputation from a reputation provider.<a href="#section-4.1-2.6" class="pilcrow">¶</a>
+          <li class="normal" id="section-4.1-2.6">REPUTATION: Provides the recipient with a proof of reputation from a reputation provider.<a href="#section-4.1-2.6" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-4.1-2.7">$ SOURCE_ASN: Reveals the ASN from which the client is connecting.<a href="#section-4.1-2.7" class="pilcrow">¶</a>
+          <li class="normal" id="section-4.1-2.7">SOURCE_ASN: Reveals the ASN from which the client is connecting.<a href="#section-4.1-2.7" class="pilcrow">¶</a>
 </li>
         </ul>
 <p id="section-4.1-3">In some situations one of the above signals may be a sufficient replacement signal in isolation, or more than one signal may be needed in combination.<a href="#section-4.1-3" class="pilcrow">¶</a></p>
 <p id="section-4.1-4">Separately, there are three signal categories that are out-of-scope for this document but are important improvements for mitigating abuse on platforms.<a href="#section-4.1-4" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-4.1-5.1">$ publisher norms: Standard expections of publishers including identity transparency and conflicts of interest.<a href="#section-4.1-5.1" class="pilcrow">¶</a>
+<li class="normal" id="section-4.1-5.1">publisher norms: Standard expections of publishers including identity transparency and conflicts of interest.<a href="#section-4.1-5.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-4.1-5.2">$ protocol improvements: Increasing security of existing protocols.<a href="#section-4.1-5.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-4.1-5.2">protocol improvements: Increasing security of existing protocols.<a href="#section-4.1-5.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-4.1-5.3">$ ecosystem improvements: Reducing reliance on less secure systems, for example, migrating user authentication from password-based to WebAuthn <span>[<a href="#WEBAUTHN" class="xref">WEBAUTHN</a>]</span> and relying on multiple factors (MFA).<a href="#section-4.1-5.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-4.1-5.3">ecosystem improvements: Reducing reliance on less secure systems, for example, migrating user authentication from password-based to WebAuthn <span>[<a href="#WEBAUTHN" class="xref">WEBAUTHN</a>]</span> and relying on multiple factors (MFA).<a href="#section-4.1-5.3" class="pilcrow">¶</a>
 </li>
         </ul>
 <div id="adoption">
@@ -1566,7 +1535,7 @@ As such, any observer along the path can pick it up and use it for various track
 <a href="#section-4.1.3" class="section-number selfRef">4.1.3. </a><a href="#name-provenance" class="section-name selfRef">Provenance</a>
           </h4>
 <p id="section-4.1.3-1">Replacement signals are only useful if they are trustworthy.<a href="#section-4.1.3-1" class="pilcrow">¶</a></p>
-<p id="section-4.1.3-2">XXX TODO<a href="#section-4.1.3-2" class="pilcrow">¶</a></p>
+<p id="section-4.1.3-2">[[OPEN ISSUE: https://github.com/ShivanKaul/draft-ip-address-privacy/issues/24]]<a href="#section-4.1.3-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="applying-appropriate-signals">
@@ -1649,13 +1618,6 @@ As such, any observer along the path can pick it up and use it for various track
 <p id="section-4.2-4">Private Access Tokens <span>[<a href="#I-D.private-access-tokens" class="xref">I-D.private-access-tokens</a>]</span> provide a technique for partitioning clients based on a per-origin policy within a time period. Its use cases include rate-limiting access to content and geo-location. PATs could be used as a REIDENTIFICATION signal or a replacement signal for GeoIP, depending on requirements.<a href="#section-4.2-4" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="potential-new-technologies">
-<section id="section-4.3">
-        <h3 id="name-potential-new-technologies">
-<a href="#section-4.3" class="section-number selfRef">4.3. </a><a href="#name-potential-new-technologies" class="section-name selfRef">Potential new technologies</a>
-      </h3>
-</section>
-</div>
 </section>
 </div>
 <div id="security-considerations">
@@ -1663,7 +1625,7 @@ As such, any observer along the path can pick it up and use it for various track
       <h2 id="name-security-considerations">
 <a href="#section-5" class="section-number selfRef">5. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
       </h2>
-<p id="section-5-1">TODO<a href="#section-5-1" class="pilcrow">¶</a></p>
+<p id="section-5-1">This draft discussses IP address use cases, underlying requirements, and possible replacement signals. Adoption challenges and privacy considerations for those signals are also discussed. Further work is needed to build and evaluate these signals as suitable replacements for IP addresses.<a href="#section-5-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="iana-considerations">
@@ -1724,7 +1686,7 @@ As such, any observer along the path can pick it up and use it for various track
 <dd class="break"></dd>
 <dt id="I-D.pauly-dprive-oblivious-doh">[I-D.pauly-dprive-oblivious-doh]</dt>
         <dd>
-<span class="refAuthor">Kinnear, E.</span>, <span class="refAuthor">McManus, P.</span>, <span class="refAuthor">Pauly, T.</span>, <span class="refAuthor">Verma, T.</span>, and <span class="refAuthor">C. A. Wood</span>, <span class="refTitle">"Oblivious DNS Over HTTPS"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-pauly-dprive-oblivious-doh-07</span>, <time datetime="2021-09-02" class="refDate">2 September 2021</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-pauly-dprive-oblivious-doh-07">https://datatracker.ietf.org/doc/html/draft-pauly-dprive-oblivious-doh-07</a>&gt;</span>. </dd>
+<span class="refAuthor">Kinnear, E.</span>, <span class="refAuthor">McManus, P.</span>, <span class="refAuthor">Pauly, T.</span>, <span class="refAuthor">Verma, T.</span>, and <span class="refAuthor">C. A. Wood</span>, <span class="refTitle">"Oblivious DNS Over HTTPS"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-pauly-dprive-oblivious-doh-09</span>, <time datetime="2022-01-05" class="refDate">5 January 2022</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-pauly-dprive-oblivious-doh-09">https://datatracker.ietf.org/doc/html/draft-pauly-dprive-oblivious-doh-09</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="I-D.private-access-tokens">[I-D.private-access-tokens]</dt>
         <dd>
@@ -1778,7 +1740,7 @@ As such, any observer along the path can pick it up and use it for various track
       <h2 id="name-acknowledgments">
 <a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
-<p id="appendix-A-1">TODO<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+<p id="appendix-A-1">[[OPEN ISSUE: TODO]]<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="authors-addresses">
