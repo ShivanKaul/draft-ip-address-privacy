@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-01-09T00:36:48.530397+00:00",
+  "timestamp": "2022-01-11T00:37:00.069586+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -1543,24 +1543,26 @@
       "id": "PR_kwDOFm-2Oc4vJDUz",
       "title": "Resolve some TODOs",
       "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/25",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "chris-wood",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2021-11-29T17:26:09Z",
-      "updatedAt": "2022-01-06T20:32:49Z",
+      "updatedAt": "2022-01-10T15:08:03Z",
       "baseRepository": "ShivanKaul/draft-ip-address-privacy",
       "baseRefName": "main",
       "baseRefOid": "9a4c6eec625cb52e79632f748616c79d74b42751",
       "headRepository": "ShivanKaul/draft-ip-address-privacy",
       "headRefName": "chris-wood-patch-1",
       "headRefOid": "f7929870cfbaa1e9436f8d05d1bcdd545b903ec7",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2022-01-10T15:08:03Z",
+      "mergedAt": "2022-01-10T15:08:03Z",
+      "mergedBy": "chris-wood",
+      "mergeCommit": {
+        "oid": "eddd9a01dd2ab02e53e99cc21675e556779caf4a"
+      },
       "comments": [],
       "reviews": [
         {
