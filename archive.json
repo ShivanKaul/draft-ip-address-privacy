@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-01-20T00:39:04.334010+00:00",
+  "timestamp": "2022-01-23T00:32:57.531983+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -1592,7 +1592,7 @@
       "labels": [],
       "body": "The privacy-law branch basically contains an update on section 3.3 IP Privacy Protection and Law.\r\nIt covers the following main examples:\r\n- Europe - GDPR (most extensive because used to derive regulations in other countries)\r\n- Brazil - LGPD\r\n- China - PIPL\r\n- Japan - APPI\r\n-  USA \r\n\r\nFixed as well few typos here and there in the rest of the document.\r\n",
       "createdAt": "2022-01-19T14:31:17Z",
-      "updatedAt": "2022-01-19T16:27:48Z",
+      "updatedAt": "2022-01-20T16:06:36Z",
       "baseRepository": "ShivanKaul/draft-ip-address-privacy",
       "baseRefName": "main",
       "baseRefOid": "eddd9a01dd2ab02e53e99cc21675e556779caf4a",
@@ -1622,6 +1622,26 @@
               "body": "the law section covers data protection regulations, but the regulatory landscape is much broader than that. I'm not sure a reference to that section is appropriate as currently worded",
               "createdAt": "2022-01-19T16:27:48Z",
               "updatedAt": "2022-01-19T16:27:49Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zKzc5",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-20T16:06:35Z",
+          "updatedAt": "2022-01-20T16:06:36Z",
+          "comments": [
+            {
+              "originalPosition": 49,
+              "body": "Fine for me, we can drop the cross reference.",
+              "createdAt": "2022-01-20T16:06:35Z",
+              "updatedAt": "2022-01-20T16:06:36Z"
             }
           ]
         }
