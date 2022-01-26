@@ -5,16 +5,16 @@
 Network Working Group                                          M. Finkel
 Internet-Draft                                           The Tor Project
 Intended status: Informational                                 B. Lassey
-Expires: 14 July 2022                                             Google
+Expires: 30 July 2022                                             Google
                                                               L. Iannone
                                                                   Huawei
                                                                J.B. Chen
                                                                   Google
-                                                         10 January 2022
+                                                         26 January 2022
 
 
                    IP Address Privacy Considerations
-             draft-ip-address-privacy-considerations-latest
+       draft-irtf-pearg-ip-address-privacy-considerations-latest
 
 Abstract
 
@@ -53,7 +53,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 14 July 2022.
+   This Internet-Draft will expire on 30 July 2022.
 
 Copyright Notice
 
