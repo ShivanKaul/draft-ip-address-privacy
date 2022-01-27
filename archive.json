@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-01-23T00:32:57.531983+00:00",
+  "timestamp": "2022-01-27T00:33:05.600797+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -506,6 +506,22 @@
       "body": "... pulled from the draft.",
       "createdAt": "2021-11-29T17:21:41Z",
       "updatedAt": "2021-11-29T17:21:41Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 27,
+      "id": "I_kwDOFm-2Oc5CezTf",
+      "title": "Move information about laws/regulations into separate document?",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/27",
+      "state": "OPEN",
+      "author": "sysrqb",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "The [IP Privacy Protection and Law](https://github.com/ShivanKaul/draft-ip-address-privacy/blob/main/draft-ip-address-privacy-considerations.md#ip-privacy-protection-and-law) section will grow quite large with #26. Documenting the current legal implications of IP addresses seems helpful within the context of finding solutions for IP address privacy, however this draft should not be overwhelming with information on the various topics. We should consider factoring out some information into a new draft, perhaps creating a \"snapshot\" of the current legal landscape on this topic (similar to the [survey of censorship techniques](https://datatracker.ietf.org/doc/draft-irtf-pearg-censorship/)).",
+      "createdAt": "2022-01-26T18:53:13Z",
+      "updatedAt": "2022-01-26T18:53:13Z",
       "closedAt": null,
       "comments": []
     }
@@ -1592,7 +1608,7 @@
       "labels": [],
       "body": "The privacy-law branch basically contains an update on section 3.3 IP Privacy Protection and Law.\r\nIt covers the following main examples:\r\n- Europe - GDPR (most extensive because used to derive regulations in other countries)\r\n- Brazil - LGPD\r\n- China - PIPL\r\n- Japan - APPI\r\n-  USA \r\n\r\nFixed as well few typos here and there in the rest of the document.\r\n",
       "createdAt": "2022-01-19T14:31:17Z",
-      "updatedAt": "2022-01-20T16:06:36Z",
+      "updatedAt": "2022-01-26T18:39:54Z",
       "baseRepository": "ShivanKaul/draft-ip-address-privacy",
       "baseRefName": "main",
       "baseRefOid": "eddd9a01dd2ab02e53e99cc21675e556779caf4a",
@@ -1642,6 +1658,92 @@
               "body": "Fine for me, we can drop the cross reference.",
               "createdAt": "2022-01-20T16:06:35Z",
               "updatedAt": "2022-01-20T16:06:36Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zfgNh",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "sysrqb",
+          "authorAssociation": "COLLABORATOR",
+          "state": "CHANGES_REQUESTED",
+          "body": "Thanks! This is seems like a good addition",
+          "createdAt": "2022-01-26T17:50:14Z",
+          "updatedAt": "2022-01-26T18:39:54Z",
+          "comments": [
+            {
+              "originalPosition": 161,
+              "body": "Can you open a new issue and add a link like https://github.com/ShivanKaul/draft-ip-address-privacy/blob/main/draft-ip-address-privacy-considerations.md?plain=1#L256?\r\n\r\nI know this section existed before and you didn't create it, but opening the issue will be more helpful.",
+              "createdAt": "2022-01-26T17:50:14Z",
+              "updatedAt": "2022-01-26T18:39:54Z"
+            },
+            {
+              "originalPosition": 83,
+              "body": "My current understanding here is that an IP address is considered personal information if it may identify a distinct person. However, the recommendation is that service providers (ISPs, web platforms) should err on the side of caution in how they handle an IP address, and treat it as personal information unless the service provider knows that the address does not identify a person. Can you change the phrasing of this sentence so it reflects the nuance of this situation? \r\n\r\nRef: https://arxiv.org/abs/2103.01019",
+              "createdAt": "2022-01-26T18:22:18Z",
+              "updatedAt": "2022-01-26T18:39:54Z"
+            },
+            {
+              "originalPosition": 84,
+              "body": "- `s/hadle/handle`\r\n- `s/seven principle/7 principles/` (seven -> 7, and `principle` should be plural)\r\n",
+              "createdAt": "2022-01-26T18:24:13Z",
+              "updatedAt": "2022-01-26T18:39:54Z"
+            },
+            {
+              "originalPosition": 89,
+              "body": "`s/allow/allowed`",
+              "createdAt": "2022-01-26T18:25:11Z",
+              "updatedAt": "2022-01-26T18:39:54Z"
+            },
+            {
+              "originalPosition": 93,
+              "body": "`/is not is not/is not/`",
+              "createdAt": "2022-01-26T18:26:08Z",
+              "updatedAt": "2022-01-26T18:39:54Z"
+            },
+            {
+              "originalPosition": 104,
+              "body": "- `s/hte/the/`\r\n- `s/demostrate/demonstrate/`",
+              "createdAt": "2022-01-26T18:28:50Z",
+              "updatedAt": "2022-01-26T18:39:54Z"
+            },
+            {
+              "originalPosition": 105,
+              "body": "- `s/demostrate/demostrate/`\r\n- `s/personale/personal/`",
+              "createdAt": "2022-01-26T18:29:43Z",
+              "updatedAt": "2022-01-26T18:39:54Z"
+            },
+            {
+              "originalPosition": 107,
+              "body": "`s/comapny/company/`",
+              "createdAt": "2022-01-26T18:30:35Z",
+              "updatedAt": "2022-01-26T18:39:54Z"
+            },
+            {
+              "originalPosition": 144,
+              "body": "Can you open an issue for this and assign yourself?",
+              "createdAt": "2022-01-26T18:31:21Z",
+              "updatedAt": "2022-01-26T18:39:54Z"
+            },
+            {
+              "originalPosition": 111,
+              "body": "- `suggests that IP addresses is considered`- > `suggests that IP addresses are considered`\r\n- `s/explicitely/explicitly/`",
+              "createdAt": "2022-01-26T18:33:02Z",
+              "updatedAt": "2022-01-26T18:39:54Z"
+            },
+            {
+              "originalPosition": 120,
+              "body": "`s/extrateritorial/extraterritorial/`",
+              "createdAt": "2022-01-26T18:34:48Z",
+              "updatedAt": "2022-01-26T18:39:54Z"
+            },
+            {
+              "originalPosition": 126,
+              "body": "- `s/U.S. Disctirict/U.S. District/`\r\n- `as an example personal identification information` -> `as an example of personal identification information`\r\n- `in the case United State` -> `in the case United States`",
+              "createdAt": "2022-01-26T18:36:08Z",
+              "updatedAt": "2022-01-26T18:39:54Z"
             }
           ]
         }
