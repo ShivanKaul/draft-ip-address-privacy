@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-01-27T00:33:05.600797+00:00",
+  "timestamp": "2022-01-30T00:33:56.786018+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -521,7 +521,47 @@
       "labels": [],
       "body": "The [IP Privacy Protection and Law](https://github.com/ShivanKaul/draft-ip-address-privacy/blob/main/draft-ip-address-privacy-considerations.md#ip-privacy-protection-and-law) section will grow quite large with #26. Documenting the current legal implications of IP addresses seems helpful within the context of finding solutions for IP address privacy, however this draft should not be overwhelming with information on the various topics. We should consider factoring out some information into a new draft, perhaps creating a \"snapshot\" of the current legal landscape on this topic (similar to the [survey of censorship techniques](https://datatracker.ietf.org/doc/draft-irtf-pearg-censorship/)).",
       "createdAt": "2022-01-26T18:53:13Z",
-      "updatedAt": "2022-01-26T18:53:13Z",
+      "updatedAt": "2022-01-27T14:43:39Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "body": "That would be OK for me, I have no strong position on this. Just two questions:\r\n- Wouldn't be worth it to ask actually on the mailing list what do people prefer?\r\n- Assuming we go for a split, I can certainly seed a draft \"IP Privacy Protection and Law\", should it go as an individual submission initially?",
+          "createdAt": "2022-01-27T14:43:39Z",
+          "updatedAt": "2022-01-27T14:43:39Z"
+        }
+      ]
+    },
+    {
+      "number": 28,
+      "id": "I_kwDOFm-2Oc5ChiJL",
+      "title": "Temporary Addresses",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/28",
+      "state": "OPEN",
+      "author": "ggx",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "I can fill this bullet.",
+      "createdAt": "2022-01-27T11:18:31Z",
+      "updatedAt": "2022-01-27T11:18:31Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 29,
+      "id": "I_kwDOFm-2Oc5ChkCm",
+      "title": "Potential new technologies",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/29",
+      "state": "OPEN",
+      "author": "ggx",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "Section to be done.\r\n\r\nhttps://github.com/ShivanKaul/draft-ip-address-privacy/blob/main/draft-ip-address-privacy-considerations.md?plain=1#L256",
+      "createdAt": "2022-01-27T11:26:20Z",
+      "updatedAt": "2022-01-27T11:26:20Z",
       "closedAt": null,
       "comments": []
     }
@@ -1608,18 +1648,26 @@
       "labels": [],
       "body": "The privacy-law branch basically contains an update on section 3.3 IP Privacy Protection and Law.\r\nIt covers the following main examples:\r\n- Europe - GDPR (most extensive because used to derive regulations in other countries)\r\n- Brazil - LGPD\r\n- China - PIPL\r\n- Japan - APPI\r\n-  USA \r\n\r\nFixed as well few typos here and there in the rest of the document.\r\n",
       "createdAt": "2022-01-19T14:31:17Z",
-      "updatedAt": "2022-01-26T18:39:54Z",
+      "updatedAt": "2022-01-28T13:46:52Z",
       "baseRepository": "ShivanKaul/draft-ip-address-privacy",
       "baseRefName": "main",
       "baseRefOid": "eddd9a01dd2ab02e53e99cc21675e556779caf4a",
       "headRepository": "ShivanKaul/draft-ip-address-privacy",
       "headRefName": "privacy-law",
-      "headRefOid": "b3a7b2331f69b72a73d7ee693c12e73ddd65e751",
+      "headRefOid": "6077403612abd4a71600b0799dbdfa58f71b06f0",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
-      "comments": [],
+      "comments": [
+        {
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "body": "> Thanks! This is seems like a good addition\r\n\r\nI did push a new commit addressing the comments.\r\n\r\n",
+          "createdAt": "2022-01-27T14:47:15Z",
+          "updatedAt": "2022-01-27T14:47:15Z"
+        }
+      ],
       "reviews": [
         {
           "id": "PRR_kwDOFm-2Oc4zFYhs",
@@ -1744,6 +1792,286 @@
               "body": "- `s/U.S. Disctirict/U.S. District/`\r\n- `as an example personal identification information` -> `as an example of personal identification information`\r\n- `in the case United State` -> `in the case United States`",
               "createdAt": "2022-01-26T18:36:08Z",
               "updatedAt": "2022-01-26T18:39:54Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zirhJ",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-27T11:18:45Z",
+          "updatedAt": "2022-01-27T11:18:45Z",
+          "comments": [
+            {
+              "originalPosition": 144,
+              "body": "Done",
+              "createdAt": "2022-01-27T11:18:45Z",
+              "updatedAt": "2022-01-27T11:18:45Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zirtG",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-27T11:19:29Z",
+          "updatedAt": "2022-01-27T11:19:30Z",
+          "comments": [
+            {
+              "originalPosition": 126,
+              "body": "Fixed in the upcoming commit!",
+              "createdAt": "2022-01-27T11:19:30Z",
+              "updatedAt": "2022-01-27T11:19:30Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zir79",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-27T11:20:27Z",
+          "updatedAt": "2022-01-27T11:20:27Z",
+          "comments": [
+            {
+              "originalPosition": 120,
+              "body": "Thanks. Fixed in the upcoming commit!",
+              "createdAt": "2022-01-27T11:20:27Z",
+              "updatedAt": "2022-01-27T11:20:27Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zir-N",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-27T11:20:34Z",
+          "updatedAt": "2022-01-27T11:20:34Z",
+          "comments": [
+            {
+              "originalPosition": 111,
+              "body": "Thanks. Fixed in the upcoming commit!",
+              "createdAt": "2022-01-27T11:20:34Z",
+              "updatedAt": "2022-01-27T11:20:34Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zisFx",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-27T11:21:01Z",
+          "updatedAt": "2022-01-27T11:21:01Z",
+          "comments": [
+            {
+              "originalPosition": 107,
+              "body": "Thanks. Fixed in the upcoming commit!",
+              "createdAt": "2022-01-27T11:21:01Z",
+              "updatedAt": "2022-01-27T11:21:01Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zisMy",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-27T11:21:27Z",
+          "updatedAt": "2022-01-27T11:21:28Z",
+          "comments": [
+            {
+              "originalPosition": 93,
+              "body": "Thanks. Fixed in the upcoming commit!",
+              "createdAt": "2022-01-27T11:21:27Z",
+              "updatedAt": "2022-01-27T11:21:28Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zisoJ",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-27T11:23:12Z",
+          "updatedAt": "2022-01-27T11:23:13Z",
+          "comments": [
+            {
+              "originalPosition": 104,
+              "body": "Thanks. Fixed in the upcoming commit!",
+              "createdAt": "2022-01-27T11:23:13Z",
+              "updatedAt": "2022-01-27T11:23:13Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4ziszy",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-27T11:23:58Z",
+          "updatedAt": "2022-01-27T11:23:58Z",
+          "comments": [
+            {
+              "originalPosition": 89,
+              "body": "Thanks. Fixed in the upcoming commit!",
+              "createdAt": "2022-01-27T11:23:58Z",
+              "updatedAt": "2022-01-27T11:23:58Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zitA4",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-27T11:24:49Z",
+          "updatedAt": "2022-01-27T11:24:49Z",
+          "comments": [
+            {
+              "originalPosition": 84,
+              "body": "Thanks. Fixed in the upcoming commit!",
+              "createdAt": "2022-01-27T11:24:49Z",
+              "updatedAt": "2022-01-27T11:24:49Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zitay",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-27T11:26:29Z",
+          "updatedAt": "2022-01-27T11:26:30Z",
+          "comments": [
+            {
+              "originalPosition": 161,
+              "body": "Done",
+              "createdAt": "2022-01-27T11:26:29Z",
+              "updatedAt": "2022-01-27T11:26:30Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zitfx",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-27T11:26:48Z",
+          "updatedAt": "2022-01-27T11:26:48Z",
+          "comments": [
+            {
+              "originalPosition": 49,
+              "body": "Dropped in the upcoming commit.",
+              "createdAt": "2022-01-27T11:26:48Z",
+              "updatedAt": "2022-01-27T11:26:48Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zjkPe",
+          "commit": {
+            "abbreviatedOid": "b3a7b23"
+          },
+          "author": "ggx",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-27T14:37:47Z",
+          "updatedAt": "2022-01-27T14:37:48Z",
+          "comments": [
+            {
+              "originalPosition": 83,
+              "body": "Good point. it is indeed true. I updated the text so to clarify when an IP address is considered personal data. Let know if it is what you had in mind.",
+              "createdAt": "2022-01-27T14:37:47Z",
+              "updatedAt": "2022-01-27T14:37:48Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zoId1",
+          "commit": {
+            "abbreviatedOid": "6077403"
+          },
+          "author": "Nimesh199398",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-28T13:46:13Z",
+          "updatedAt": "2022-01-28T13:46:13Z",
+          "comments": [
+            {
+              "originalPosition": 49,
+              "body": "Express highway pe to nai ne and the OFX of punctuation and I will Grammarly has a lot to nai ne and we are going on your own to make a chance of punctuation for the next year and a good place to get some more info about it will be a great opportunity for you and I will Grammarly you as ",
+              "createdAt": "2022-01-28T13:46:13Z",
+              "updatedAt": "2022-01-28T13:46:13Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc4zoIo8",
+          "commit": {
+            "abbreviatedOid": "6077403"
+          },
+          "author": "Nimesh199398",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2022-01-28T13:46:52Z",
+          "updatedAt": "2022-01-28T13:46:52Z",
+          "comments": [
+            {
+              "originalPosition": 49,
+              "body": "> Dropped in the upcoming commit.\n\n>>>>>7787>>{{{{{{{>{{{",
+              "createdAt": "2022-01-28T13:46:52Z",
+              "updatedAt": "2022-01-28T13:46:52Z"
             }
           ]
         }
