@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-01-30T00:33:56.786018+00:00",
+  "timestamp": "2022-03-06T00:08:45.552413+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -1648,7 +1648,7 @@
       "labels": [],
       "body": "The privacy-law branch basically contains an update on section 3.3 IP Privacy Protection and Law.\r\nIt covers the following main examples:\r\n- Europe - GDPR (most extensive because used to derive regulations in other countries)\r\n- Brazil - LGPD\r\n- China - PIPL\r\n- Japan - APPI\r\n-  USA \r\n\r\nFixed as well few typos here and there in the rest of the document.\r\n",
       "createdAt": "2022-01-19T14:31:17Z",
-      "updatedAt": "2022-01-28T13:46:52Z",
+      "updatedAt": "2022-03-04T23:11:40Z",
       "baseRepository": "ShivanKaul/draft-ip-address-privacy",
       "baseRefName": "main",
       "baseRefOid": "eddd9a01dd2ab02e53e99cc21675e556779caf4a",
@@ -2074,6 +2074,19 @@
               "updatedAt": "2022-01-28T13:46:52Z"
             }
           ]
+        },
+        {
+          "id": "PRR_kwDOFm-2Oc41sR3q",
+          "commit": {
+            "abbreviatedOid": "6077403"
+          },
+          "author": "arichiv",
+          "authorAssociation": "NONE",
+          "state": "CHANGES_REQUESTED",
+          "body": "Sorry for the delay in review. I have a couple points of feedback:\n(1) Could you split out the misc grammer and spelling changes into a different CL? They should be easy to approve.\n(2) Could you reformat the IP Privacy Law section into more of a table? It'd be nice to note the key points of overlap and difference between the 6 locales discussed in a more focused way. The table format would also be easy to expand as future jurisdictions adopt relevant law.\n\nThanks for contributing this!",
+          "createdAt": "2022-03-04T23:11:40Z",
+          "updatedAt": "2022-03-04T23:11:40Z",
+          "comments": []
         }
       ]
     }
