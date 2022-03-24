@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-03-08T00:06:03.708427+00:00",
+  "timestamp": "2022-03-24T00:05:58.618148+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -1648,7 +1648,7 @@
       "labels": [],
       "body": "The privacy-law branch basically contains an update on section 3.3 IP Privacy Protection and Law.\r\nIt covers the following main examples:\r\n- Europe - GDPR (most extensive because used to derive regulations in other countries)\r\n- Brazil - LGPD\r\n- China - PIPL\r\n- Japan - APPI\r\n-  USA \r\n\r\nFixed as well few typos here and there in the rest of the document.\r\n",
       "createdAt": "2022-01-19T14:31:17Z",
-      "updatedAt": "2022-03-07T16:30:29Z",
+      "updatedAt": "2022-03-23T21:26:19Z",
       "baseRepository": "ShivanKaul/draft-ip-address-privacy",
       "baseRefName": "main",
       "baseRefOid": "eddd9a01dd2ab02e53e99cc21675e556779caf4a",
@@ -1680,6 +1680,13 @@
           "body": "> On point 2: The table is great idea I'll put it at the end of the section as a summary, what do you think?\n\nI'm suggesting that the 'IP Privacy Law' section becomes the table and a paragraph explaining why the different points of comparison were picked. Focusing on paragraph summaries of specific laws will make this harder to review I think.\n\n> On point 1: not sure what you are asking to be done, can you detail?\n\nUnder 'Next-User Implications' and a couple other sections you made minor wording fixes. If those were split out into another PR instead of being bundled with this one they would be approved quickly.",
           "createdAt": "2022-03-07T16:30:29Z",
           "updatedAt": "2022-03-07T16:30:29Z"
+        },
+        {
+          "author": "bslassey",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "> > On point 2: The table is great idea I'll put it at the end of the section as a summary, what do you think?\r\n> \r\n> I'm suggesting that the 'IP Privacy Law' section becomes the table and a paragraph explaining why the different points of comparison were picked. Focusing on paragraph summaries of specific laws will make this harder to review I think.\r\n> \r\n> > On point 1: not sure what you are asking to be done, can you detail?\r\n> \r\n> Under 'Next-User Implications' and a couple other sections you made minor wording fixes. If those were split out into another PR instead of being bundled with this one they would be approved quickly.\r\n\r\nBig +1 to both of these suggestions. ",
+          "createdAt": "2022-03-23T21:26:19Z",
+          "updatedAt": "2022-03-23T21:26:19Z"
         }
       ],
       "reviews": [
