@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2022-03-24T00:05:58.618148+00:00",
+  "timestamp": "2022-03-29T00:07:16.839910+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -562,6 +562,22 @@
       "body": "Section to be done.\r\n\r\nhttps://github.com/ShivanKaul/draft-ip-address-privacy/blob/main/draft-ip-address-privacy-considerations.md?plain=1#L256",
       "createdAt": "2022-01-27T11:26:20Z",
       "updatedAt": "2022-01-27T11:26:20Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 30,
+      "id": "I_kwDOFm-2Oc5GkQP8",
+      "title": "Augmenting replacement signals with reporting mechanisms",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/30",
+      "state": "OPEN",
+      "author": "philippp",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "The current draft proposal lists signals that may compensate for some IP attributes (e.g. loss of longitudinal stability). In addition to providing signals from the proxy to internet-facing services, have we thought about patterns and mechanisms through which services could report abusive connections back to the proxy?\r\n\r\nIdeally, this would allow the proxy to curtail the access of specific users, as opposed to having multi-tenant IP addresses blocked by the service under attack. The OHAI proposal (https://datatracker.ietf.org/doc/html/draft-rdb-ohai-feedback-to-proxy) is one such attempt to provide a path for feedback, and may be extensible to two-hop proxies and off-line reporting of abuse. \r\n\r\nShould such mechanisms be considered in scope, in addition to signals emitted from the proxy?\r\n",
+      "createdAt": "2022-03-28T19:48:42Z",
+      "updatedAt": "2022-03-28T19:48:42Z",
       "closedAt": null,
       "comments": []
     }
